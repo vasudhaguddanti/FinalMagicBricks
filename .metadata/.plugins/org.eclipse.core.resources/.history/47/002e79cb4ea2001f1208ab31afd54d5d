@@ -1,0 +1,14 @@
+package com.stepDefinition;
+
+import io.cucumber.java.en.Given;
+
+public class Buy {
+	@Given("user is able to print")
+	public void user_is_able_to_print() {
+	    System.out.println("print 10");
+	}
+
+
+
+
+}

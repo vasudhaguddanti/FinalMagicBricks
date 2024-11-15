@@ -1,0 +1,15 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+public class ProjectDetailsPage extends HomePage {
+	
+	public ProjectDetailsPage(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+
+}

@@ -1,0 +1,2 @@
+file:src/test/resources/featureData/featureFile.feature:9:39
+file:src/test/resources/featureData/buyLink.feature:35

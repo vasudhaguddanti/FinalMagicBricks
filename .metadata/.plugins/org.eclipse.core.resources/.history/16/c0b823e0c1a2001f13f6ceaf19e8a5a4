@@ -1,0 +1,31 @@
+Feature: MagicBrickBuyModule
+
+
+Background:
+Given Browser should be open and url should be navigated
+When user should be able to hover on login link
+
+
+
+Scenario: Validate that the user can sign in to the application
+
+And Click on main sign up link
+And Enter the valid credentials
+And Click on sign up button
+And Enter the otp that is generated to the mobile number given
+Then Click on continue button and user should be signed in
+
+
+###############
+
+Scenario: Validate that user is able to logged in
+
+
+And user should be able to click on login button and navigate to the login page
+And user should be able to enter valid credentails and click on next button
+And user should be able to click on continue
+Then user should be logged in
+
+
+
+

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[User is hover on the location and click on banglore]]>
+    </line>
+    <line>
+      <![CDATA[user is mouse hover on the buy link]]>
+    </line>
+    <line>
+      <![CDATA[Budget Homes is displayed]]>
+    </line>
+    <line>
+      <![CDATA[User is able to navigte the Premium Homes Page]]>
+    </line>
+    <line>
+      <![CDATA[user is able to mouse hover on HomeLoans Link]]>
+    </line>
+    <line>
+      <![CDATA[user is click on the SBIHomeLoanEMICalculator Link and navigate to the SBIHomeLoanEMICalculator Page]]>
+    </line>
+    <line>
+      <![CDATA[user is able to change the LoanTenure Years]]>
+    </line>
+    <line>
+      <![CDATA[user is click on RecalculateYourEMI button and EMI amount is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[User is hover on the location and click on banglore]]>
+    </line>
+    <line>
+      <![CDATA[user is mouse hover on the buy link]]>
+    </line>
+    <line>
+      <![CDATA[Budget Homes is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Flat in Banglore Page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[User is click on MenuBar Icon]]>
+    </line>
+    <line>
+      <![CDATA[Help Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[user is able to click on help link]]>
+    </line>
+    <line>
+      <![CDATA[user clicks on help center and navigate to the help center page]]>
+    </line>
+    <line>
+      <![CDATA[user clicks on the Explore More Link]]>
+    </line>
+    <line>
+      <![CDATA[user click on manage calls/Alerts link and navigate to Manage Calls/Alters Page]]>
+    </line>
+    <line>
+      <![CDATA[user is able to click on qustion and view the answer]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[User is hover on the location and click on banglore]]>
+    </line>
+    <line>
+      <![CDATA[user is mouse hover on the buy link]]>
+    </line>
+    <line>
+      <![CDATA[Budget Homes is displayed]]>
+    </line>
+    <line>
+      <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[User is hover on the location and click on banglore]]>
+    </line>
+    <line>
+      <![CDATA[user is mouse hover on the buy link]]>
+    </line>
+    <line>
+      <![CDATA[Budget Homes is displayed]]>
+    </line>
+    <line>
+      <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click on BudgetLink]]>
+    </line>
+    <line>
+      <![CDATA[user is able to select the ₹ 80 Lac Option]]>
+    </line>
+    <line>
+      <![CDATA[user is navigate to the ₹ 80 Lac Page]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[User is hover on the location and click on banglore]]>
+    </line>
+    <line>
+      <![CDATA[user is mouse hover on the buy link]]>
+    </line>
+    <line>
+      <![CDATA[Budget Homes is displayed]]>
+    </line>
+    <line>
+      <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click on BudgetLink]]>
+    </line>
+    <line>
+      <![CDATA[user is able to select the ₹ 1 Cr Option]]>
+    </line>
+    <line>
+      <![CDATA[user is navigate to the ₹ 1 Cr Page]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[User is hover on the location and click on banglore]]>
+    </line>
+    <line>
+      <![CDATA[user is mouse hover on the buy link]]>
+    </line>
+    <line>
+      <![CDATA[Budget Homes is displayed]]>
+    </line>
+    <line>
+      <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+    </line>
+    <line>
+      <![CDATA[User is able to click on BudgetLink]]>
+    </line>
+    <line>
+      <![CDATA[user is able to select the ₹ 2.0 Cr Option]]>
+    </line>
+    <line>
+      <![CDATA[user is navigate to the ₹ 2.0 Cr Page]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[User is logged in]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[Usser is signed in]]>
+    </line>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-11-15T11:02:54 IST" name="Default suite" finished-at="2024-11-15T11:15:20 IST" duration-ms="745836">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-11-15T11:02:54 IST" name="Default test" finished-at="2024-11-15T11:15:20 IST" duration-ms="745836">
+      <class name="com.runners.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:02:54 IST" name="setUpClass" finished-at="2024-11-15T11:02:55 IST" duration-ms="675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@62360a68]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:02:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:04:36 IST" duration-ms="101551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the user able to Calculate the Emi"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BuyLink"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[User is hover on the location and click on banglore]]>
+            </line>
+            <line>
+              <![CDATA[user is mouse hover on the buy link]]>
+            </line>
+            <line>
+              <![CDATA[Budget Homes is displayed]]>
+            </line>
+            <line>
+              <![CDATA[User is able to navigte the Premium Homes Page]]>
+            </line>
+            <line>
+              <![CDATA[user is able to mouse hover on HomeLoans Link]]>
+            </line>
+            <line>
+              <![CDATA[user is click on the SBIHomeLoanEMICalculator Link and navigate to the SBIHomeLoanEMICalculator Page]]>
+            </line>
+            <line>
+              <![CDATA[user is able to change the LoanTenure Years]]>
+            </line>
+            <line>
+              <![CDATA[user is click on RecalculateYourEMI button and EMI amount is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:04:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:06:03 IST" duration-ms="86725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the user should be able to see the Manage Calls/Alerts answers"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BuyLink"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[User is hover on the location and click on banglore]]>
+            </line>
+            <line>
+              <![CDATA[user is mouse hover on the buy link]]>
+            </line>
+            <line>
+              <![CDATA[Budget Homes is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Flat in Banglore Page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[User is click on MenuBar Icon]]>
+            </line>
+            <line>
+              <![CDATA[Help Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[user is able to click on help link]]>
+            </line>
+            <line>
+              <![CDATA[user clicks on help center and navigate to the help center page]]>
+            </line>
+            <line>
+              <![CDATA[user clicks on the Explore More Link]]>
+            </line>
+            <line>
+              <![CDATA[user click on manage calls/Alerts link and navigate to Manage Calls/Alters Page]]>
+            </line>
+            <line>
+              <![CDATA[user is able to click on qustion and view the answer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:06:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:07:16 IST" duration-ms="73247" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that user is able to click on flatName and navigate to the details of the flat page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BuyLink"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3df2427573e7850b8063ee7667248b36, isElementDisplayed {id=f.9A832447A3808A41FDA810B4D4A7977D.d.5F3F8869FF6B07CD14B0A87EE0756011.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3df2427573e7850b8063ee7667248b36)] -> xpath: //div[@class='title-ellipsis' and text()='BHK']]
+Session ID: 3df2427573e7850b8063ee7667248b36]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3df2427573e7850b8063ee7667248b36, isElementDisplayed {id=f.9A832447A3808A41FDA810B4D4A7977D.d.5F3F8869FF6B07CD14B0A87EE0756011.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3df2427573e7850b8063ee7667248b36)] -> xpath: //div[@class='title-ellipsis' and text()='BHK']]
+Session ID: 3df2427573e7850b8063ee7667248b36
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at com.utilityClasses.WebDriverUtility.waitForElementPresent(WebDriverUtility.java:23)
+at com.stepDefinitions.stepDefinitionForBuy.user_should_be_click_on_the_bhk_link(stepDefinitionForBuy.java:131)
+at ✽.user should be click on the BHK link(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/buyLink.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[User is hover on the location and click on banglore]]>
+            </line>
+            <line>
+              <![CDATA[user is mouse hover on the buy link]]>
+            </line>
+            <line>
+              <![CDATA[Budget Homes is displayed]]>
+            </line>
+            <line>
+              <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:07:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:08:35 IST" duration-ms="78403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BuyLink"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[User is hover on the location and click on banglore]]>
+            </line>
+            <line>
+              <![CDATA[user is mouse hover on the buy link]]>
+            </line>
+            <line>
+              <![CDATA[Budget Homes is displayed]]>
+            </line>
+            <line>
+              <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click on BudgetLink]]>
+            </line>
+            <line>
+              <![CDATA[user is able to select the ₹ 80 Lac Option]]>
+            </line>
+            <line>
+              <![CDATA[user is navigate to the ₹ 80 Lac Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:08:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:09:49 IST" duration-ms="74592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BuyLink"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[User is hover on the location and click on banglore]]>
+            </line>
+            <line>
+              <![CDATA[user is mouse hover on the buy link]]>
+            </line>
+            <line>
+              <![CDATA[Budget Homes is displayed]]>
+            </line>
+            <line>
+              <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click on BudgetLink]]>
+            </line>
+            <line>
+              <![CDATA[user is able to select the ₹ 1 Cr Option]]>
+            </line>
+            <line>
+              <![CDATA[user is navigate to the ₹ 1 Cr Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:09:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:11:06 IST" duration-ms="77043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BuyLink"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[User is hover on the location and click on banglore]]>
+            </line>
+            <line>
+              <![CDATA[user is mouse hover on the buy link]]>
+            </line>
+            <line>
+              <![CDATA[Budget Homes is displayed]]>
+            </line>
+            <line>
+              <![CDATA[user is able to click on BudgetHomes and naviagted to the BudgetHomes Page]]>
+            </line>
+            <line>
+              <![CDATA[User is able to click on BudgetLink]]>
+            </line>
+            <line>
+              <![CDATA[user is able to select the ₹ 2.0 Cr Option]]>
+            </line>
+            <line>
+              <![CDATA[user is navigate to the ₹ 2.0 Cr Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:11:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:12:43 IST" duration-ms="96420" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the user is able to add flat to the shortList"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBrickBuyModule"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.magicbricks.com/] but found [https://www.magicbricks.com/property-for-sale-rent/residential-real-estate]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.magicbricks.com/] but found [https://www.magicbricks.com/property-for-sale-rent/residential-real-estate]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.stepDefinitions.stepDefinitionForBuy.browser_should_be_open_and_url_should_be_navigated(stepDefinitionForBuy.java:53)
+at ✽.Browser should be open and url should be navigated(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/featureFile.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[User is logged in]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:12:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:14:25 IST" duration-ms="101670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the user can sign in to the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBrickBuyModule"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[Usser is signed in]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:14:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T11:15:20 IST" duration-ms="54985" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that user is able to logged in"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBrickBuyModule"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85e289b84f11caa989a3e91c15541560, clickElement {id=f.633A7AF26764C257B3A3693098095B2F.d.77C9C42FB3BB494FAE66EC9243A05A23.e.61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64156/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85e289b84f11caa989a3e91c15541560)] -> xpath: (//a[text()='Login'])[2]]
+Session ID: 85e289b84f11caa989a3e91c15541560]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85e289b84f11caa989a3e91c15541560, clickElement {id=f.633A7AF26764C257B3A3693098095B2F.d.77C9C42FB3BB494FAE66EC9243A05A23.e.61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64156/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85e289b84f11caa989a3e91c15541560)] -> xpath: (//a[text()='Login'])[2]]
+Session ID: 85e289b84f11caa989a3e91c15541560
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at com.elementRepository.HomePage.clickElement(HomePage.java:21)
+at com.elementRepository.HomePage.clickOLoginButton(HomePage.java:45)
+at com.stepDefinitions.stepDefinitionForBuy.user_should_be_able_to_click_on_login_button_and_navigate_to_the_login_page(stepDefinitionForBuy.java:67)
+at ✽.user should be able to click on login button and navigate to the login page(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/featureFile.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runners.CucumberRunner@4988d8b8]" started-at="2024-11-15T11:15:20 IST" name="tearDownClass" finished-at="2024-11-15T11:15:20 IST" duration-ms="454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runners.CucumberRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

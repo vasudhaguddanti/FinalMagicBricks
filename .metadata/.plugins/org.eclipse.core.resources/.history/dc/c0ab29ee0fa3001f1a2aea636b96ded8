@@ -1,0 +1,51 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class LoginPage extends HomePage{
+	public LoginPage(WebDriver driver) {
+		super(driver);
+	}
+
+	@FindBy(id = "emailOrMobile")
+	private WebElement emailOrPhoneTextFeild;
+
+	public WebElement getEmailOrPhoneTextFeild() {
+		return emailOrPhoneTextFeild;
+	}
+
+	@FindBy(id = "btnStep1")
+	private WebElement nextButton;
+
+	public WebElement getNextButton() {
+		return nextButton;
+	}
+
+	@FindBy(xpath = "(//button[contains(text(),'Continue')])[2]")
+	private WebElement continueButton;
+
+	public WebElement getContinueButton() {
+		return continueButton;
+	}
+
+	// click operation
+	public void clickElement(WebElement element) {
+		element.click();
+	}
+
+	// sendKeys Operation
+	public void sendKeysToElement(WebElement element, String keys) {
+		element.sendKeys(keys);
+	}
+	
+	public HomePage clickOnContinueLink(WebDriver driver)
+	{
+		LoginPage loginPage=new LoginPage(driver);
+		loginPage.clickElement(loginPage.continueButton);
+		return new HomePage(driver);
+	}
+
+}

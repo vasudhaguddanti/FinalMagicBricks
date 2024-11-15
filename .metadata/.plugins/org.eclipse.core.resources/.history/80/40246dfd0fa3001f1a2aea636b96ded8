@@ -1,0 +1,22 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class SalesEnquiryPage extends HomePage {
+
+	public SalesEnquiryPage(WebDriver driver) {
+		super(driver);
+	}
+
+	@FindBy(xpath = "//a[text()='Terms & Conditions']")
+	private WebElement termsAndConditionsLink;
+
+	public WebElement getTermsAndConditionsLink() {
+		return termsAndConditionsLink;
+	}
+
+	
+
+}

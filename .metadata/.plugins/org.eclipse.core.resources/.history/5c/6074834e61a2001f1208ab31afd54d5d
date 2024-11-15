@@ -1,0 +1,426 @@
+package com.stepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.Reporter;
+
+import com.elementRepository.BudgetHomesPage;
+import com.elementRepository.FlatInBanglorePage;
+import com.elementRepository.HelpCenterPage;
+import com.elementRepository.HomePage;
+import com.elementRepository.LoginPage;
+import com.elementRepository.PremiumHomesPage;
+import com.elementRepository.SalesEnquiryPage;
+import com.elementRepository.SbiHomeLoanEmiCalculatorPage;
+import com.elementRepository.ShortListPage;
+import com.elementRepository.SignUpPage;
+import com.utilPackage.DriverFactory;
+import com.utilityClasses.FileUtility;
+import com.utilityClasses.JavaScriptUtil;
+import com.utilityClasses.WebDriverUtility;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDefinition {
+	
+	WebDriver driver = DriverFactory.getDriver();
+	WebDriverUtility webDriverUtility = new WebDriverUtility();
+	BudgetHomesPage budgetHomesPage = new BudgetHomesPage(driver);
+	FileUtility fileUtility = new FileUtility();
+	ShortListPage shortListPage = new ShortListPage(driver);
+	JavaScriptUtil javaScriptUtil = new JavaScriptUtil(driver);
+	HomePage homePage=new HomePage(driver);
+	SignUpPage signUpPage=new SignUpPage(driver);
+	LoginPage loginPage=new LoginPage(driver);
+	PremiumHomesPage premiumHomesPage=new PremiumHomesPage(driver);
+	SbiHomeLoanEmiCalculatorPage sbiHomeLoanEmiCalculatorPage=new SbiHomeLoanEmiCalculatorPage(driver);
+	FlatInBanglorePage flatInBanglorePage=new FlatInBanglorePage(driver);
+	HelpCenterPage helpCenterPage=new HelpCenterPage(driver);
+	SalesEnquiryPage salesEnquiryPage=new SalesEnquiryPage(driver);
+	
+	String flatName;
+	String project;
+	
+	
+	//sign Up
+	@Given("Browser should be open and url should be navigated")
+	public void browser_should_be_open_and_url_should_be_navigate() throws Exception {
+		Assert.assertEquals(driver.getCurrentUrl(), fileUtility.getDataFromPropertiesFiles("url"));
+		Reporter.log("Browser is opened", true);
+	}
+	
+	@When("user should be able to hover on login link")
+	public void user_should_be_able_to_hover_on_login_link() throws InterruptedException {
+		webDriverUtility.mouseHover(driver, homePage.getLoginLink());
+		Thread.sleep(3000);
+	}
+	
+	@When("Click on main sign up link")
+	public void click_on_main_sign_up_link() throws Exception {
+		javaScriptUtil.jsClick(signUpPage.getSignUpLink());
+		webDriverUtility.switchToTabOnTitle(driver, fileUtility.getDataFromPropertiesFiles("loginTitle"));
+	    //signUpPage.getMainSignUpLink().click();
+		//signUpPage.clickElement(signUpPage.getMainSignUpLink());
+		javaScriptUtil.jsClick(signUpPage.getMainSignUpLink());;
+	}
+
+	@When("Enter the valid credentials")
+	public void enter_the_valid_credentials() throws Exception {
+		//signUpPage.getRadioLink().click();
+		signUpPage.clickElement(signUpPage.getRadioLink());
+		//signUpPage.getNameTextField().sendKeys(fileUtility.getDataFromPropertiesFiles("signUpName"));
+		signUpPage.sendKeysToElement(signUpPage.getNameTextField(), fileUtility.getDataFromPropertiesFiles("signUpName"));
+		//signUpPage.getEmailTextField().sendKeys(fileUtility.getDataFromPropertiesFiles("signUpEmail"));
+		signUpPage.sendKeysToElement(signUpPage.getEmailTextField(), fileUtility.getDataFromPropertiesFiles("signUpEmail"));
+		//signUpPage.getPasswordTextField().sendKeys(fileUtility.getDataFromPropertiesFiles("signUpPassword"));
+		signUpPage.sendKeysToElement(signUpPage.getPasswordTextField(), fileUtility.getDataFromPropertiesFiles("signUpPassword"));
+		//signUpPage.getMobileTextField().sendKeys(fileUtility.getDataFromPropertiesFiles("signUpPhno"));
+		signUpPage.sendKeysToElement(signUpPage.getMobileTextField(), fileUtility.getDataFromPropertiesFiles("signUpPhno"));
+		//signUpPage.getCheckboxField().click();
+		signUpPage.clickElement(signUpPage.getCheckboxField());
+		//signUpPage.getCaptchaField().click();
+		signUpPage.clickElement(signUpPage.getCaptchaField());
+		Thread.sleep(3000);
+	}
+
+	@When("Click on sign up button")
+	public void click_on_sign_up_button() {
+		//signUpPage.getSignUpButton().click();
+		signUpPage.clickElement(signUpPage.getSignUpButton());
+	}
+
+	@When("Enter the otp that is generated to the mobile number given")
+	public void enter_the_otp_that_is_generated_to_the_mobile_number_given() throws InterruptedException {
+		Thread.sleep(30000);
+	}
+
+	@Then("Click on continue button and user should be signed in")
+	public void click_on_continue_button_and_user_should_be_signed_in() {
+		//signUpPage.getContinueButton().click();
+		signUpPage.clickElement(signUpPage.getContinueButton());
+		Assert.assertTrue(homePage.getProfileLink().isDisplayed());
+		Reporter.log("user is signed in",true);
+	}
+
+	
+	
+	//login
+	
+	@Given("user should be able to logged in")
+	public void user_should_be_able_to_logged_in() throws Exception {
+		webDriverUtility.mouseHover(driver, homePage.getLoginLink());
+		Thread.sleep(3000);
+		// homePage.getLoginButton().click();
+		homePage.clickElement(homePage.getLoginButton());
+		Thread.sleep(3000);
+		webDriverUtility.switchToTabOnTitle(driver, fileUtility.getDataFromPropertiesFiles("loginTitle"));
+		Thread.sleep(3000);
+		// loginPage.getEmailOrPhoneTextFeild().sendKeys(fileUtility.getDataFromPropertiesFiles("phno"));
+		loginPage.sendKeysToElement(loginPage.getEmailOrPhoneTextFeild(),
+				fileUtility.getDataFromPropertiesFiles("phno"));
+		Thread.sleep(7000);
+		// loginPage.getNextButton().click();
+		loginPage.clickElement(loginPage.getNextButton());
+		Thread.sleep(40000);
+		// loginPage.getContinueButton().click();
+		loginPage.clickElement(loginPage.getContinueButton());
+		// homePage.getPopUpWrong().click();
+		homePage.clickElement(homePage.getPopUpWrong());
+		Assert.assertTrue(homePage.getProfileLink().isDisplayed());
+		Reporter.log("User is logged in", true);
+	}
+	
+	///buy Link
+	
+	@When("user should be hover on location and click on BangloreLink")
+	public void user_should_be_hover_on_location_and_click_on_banglore_link() throws InterruptedException {
+		webDriverUtility.mouseHover(driver, homePage.getLocationLink());
+		Thread.sleep(3000);
+		javaScriptUtil.jsClick(homePage.getBangloreLink());
+		Thread.sleep(3000);
+		Reporter.log("User is hover on the location and click on banglore", true);
+	}
+
+	@When("user should be able to mouse hover on the Buy Link")
+	public void user_should_be_able_to_mouse_hover_on_the_buy_link() throws InterruptedException {
+		webDriverUtility.mouseHover(driver, homePage.getBuyLink());
+		Thread.sleep(2000);
+		Reporter.log("user is mouse hover on the buy link");
+	}
+
+	@Then("The Ready to Move link should be displayed")
+	public void the_ready_to_move_link_should_be_displayed() throws Exception {
+
+		Assert.assertEquals(homePage.getReadyToMoveLink().getText(),
+				fileUtility.getDataFromPropertiesFiles("readytomoveText"));
+		Reporter.log("Budget Homes is displayed", true);
+	}
+
+	//Add to shortList
+	@When("user should be click on the BHK link")
+	public void user_should_be_click_on_the_bhk_link() {
+		webDriverUtility.waitForElementPresent(driver, budgetHomesPage.getBhkLink());
+		budgetHomesPage.clickElement(budgetHomesPage.getBhkLink());
+		Reporter.log("user is click on BHK link", true);
+	}
+
+	@When("user should be click on the 1BHK link")
+	public void user_should_be_click_on_the_1bhk_link() throws InterruptedException {
+		webDriverUtility.waitForElementPresent(driver, budgetHomesPage.getBhk1Button());
+		javaScriptUtil.jsClick(budgetHomesPage.getBhk1Button());
+		Thread.sleep(5000);
+		Reporter.log("user is click on 1bhk link", true);
+	}
+
+	@When("user should be able to click on the like button")
+	public void user_should_be_able_to_click_on_the_like_button() throws InterruptedException {
+		javaScriptUtil.jsClick(budgetHomesPage.getLikeButton());
+		Thread.sleep(5000);
+		String flatName= budgetHomesPage.getFlatName().getAttribute("title");
+		
+		Reporter.log("user is click on like button", true);
+	 }
+
+	@When("user should be able to click on the Shortlist button")
+	public void user_should_be_able_to_click_on_the_shortlist_button() {
+
+		webDriverUtility.mouseHover(driver, budgetHomesPage.getShortListLink());
+		Reporter.log("user is able to click on shortlist button", true);
+	}
+
+	@When("user should be able to click on the View your Shortlisted Properties link")
+	public void user_should_be_able_to_click_on_the_view_your_shortlisted_properties_link() throws Exception {
+		javaScriptUtil.jsClick(budgetHomesPage.getViewShortList());
+		webDriverUtility.switchToTabOnUrl(driver, fileUtility.getDataFromPropertiesFiles("shortlisturl"));
+		Thread.sleep(3000);
+		Reporter.log("user is click on view your shortlist properties link", true);
+	}
+
+	@Then("user should be able see the flat in Shortlist page")
+	public void user_should_be_able_see_the_flat_in_shortlist_page() {
+		Assert.assertTrue(budgetHomesPage.getFlatName().isDisplayed());
+		Reporter.log("user is able to see the flat in shortlist page", true);
+	}
+
+	//scenario outline budgetMaxOption
+	
+	public class BudgetMaxOption {
+
+		WebDriver driver = DriverFactory.getDriver();
+		HomePage homePage = new HomePage(driver);
+		WebDriverUtility webDriverUtility = new WebDriverUtility();
+		FileUtility fileUtility = new FileUtility();
+		BudgetHomesPage budgetHomesPage = new BudgetHomesPage(driver);
+		JavaScriptUtil javaScriptUtil = new JavaScriptUtil(driver);
+		public Integer maxBudget;
+		String text;
+
+		@When("user should be able to click on BudgetHomes and navigated to the BudgetHomesPage")
+		public void user_should_be_able_to_click_on_budget_homes_and_navigated_to_the_budget_homes_page() throws Exception {
+			javaScriptUtil.jsClick(homePage.getBudgetHomesLink());
+			Thread.sleep(2000);
+			webDriverUtility.switchToTabOnUrl(driver, fileUtility.getDataFromPropertiesFiles("budgethomesurl"));
+			Assert.assertTrue(driver.getCurrentUrl().contains(fileUtility.getDataFromPropertiesFiles("budgethomesurl")));
+			Reporter.log("user is able to click on BudgetHomes and naviagted to the BudgetHomes Page", true);
+		}
+
+		@When("user should be able to click on BudgetLink")
+		public void user_should_be_able_to_click_on_budget_link() throws InterruptedException {
+
+			javaScriptUtil.jsClick(budgetHomesPage.getBudgetButton());
+			Reporter.log("User is able to click on BudgetLink", true);
+		}
+
+		@When("user should be able to select on the {int} in MaxOptions Dropdown")
+		public void user_should_be_able_to_select_on_the_in_max_options_dropdown(Integer maxBudget) throws Exception {
+			this.maxBudget = maxBudget;
+			WebElement dropDown = budgetHomesPage.getMaxDropdown();
+			text = fileUtility.getDataFromExcel("maxOptions", maxBudget, 0);
+			webDriverUtility.select(dropDown, text);
+			Thread.sleep(2000);
+			Reporter.log("user is able to select the " + text + " Option", true);
+		}
+
+		@Then("user should be navigate to that relavent Page")
+		public void user_should_be_navigate_to_that_relavent_page() {
+			if (maxBudget == 1) {
+				Assert.assertTrue(budgetHomesPage.getMaxBudget1().isDisplayed());
+				Reporter.log("user is navigate to the " + text + " Page", true);
+			} else if (maxBudget == 2) {
+				Assert.assertTrue(budgetHomesPage.getMaxBudget2().isDisplayed());
+				Reporter.log("user is navigate to the " + text + " Page", true);
+			} else {
+				Assert.assertTrue(budgetHomesPage.getMaxBudget3().isDisplayed());
+				Reporter.log("user is navigate to the " + text + " Page", true);
+			}
+
+		}
+		
+		///details of flat
+		
+		@When("user should be able to click on the flat link")
+		public void user_should_be_able_to_click_on_the_flat_link() throws InterruptedException {
+		    //budgetHomesPage.getFlatLink().click();
+			budgetHomesPage.clickElement(budgetHomesPage.getFlatLink());
+		    project = budgetHomesPage.getFlatName().getText();
+		    webDriverUtility.switchToTabOnTitle(driver, project);
+		    Thread.sleep(3000);
+		    Reporter.log("user is able to click on flat link",true);
+		 }
+		
+		@When("user should be able to remove the HouseOrVilla type in PropertyType")
+		public void user_should_be_able_to_remove_the_HouseOrVilla_type_in_PropertyType() throws InterruptedException
+		{
+			javaScriptUtil.jsClick(budgetHomesPage.getPropertyType());
+			//Thread.sleep(2000);
+			javaScriptUtil.jsClick(budgetHomesPage.getHouseOrVillaButton());
+			//Thread.sleep(2000);
+			javaScriptUtil.jsClick(budgetHomesPage.getDoneButton());
+			//Thread.sleep(2000);
+		}
+
+		@Then("user should be able to navigate the details of the flat page")
+		public void user_should_be_able_to_navigate_the_details_of_the_flat_page() {
+			Assert.assertTrue(budgetHomesPage.getProjectNameInProjectPage().isDisplayed());
+		    Reporter.log("user is able to navigate the deatails of flat page");
+		}
+		
+		
+		//emi calculator
+		
+		@When("user should be able to click on Premium Homes Link and navigate to the premium homes Page")
+		public void user_should_be_able_to_click_on_premium_homes_link_and_navigate_to_the_premium_homes_page() throws Exception {
+		    //homePage.getPremiumHomesLink().click();
+			homePage.clickElement(homePage.getPremiumHomesLink());
+		    webDriverUtility.switchToTabOnTitle(driver, fileUtility.getDataFromPropertiesFiles("premiumHomesTitle"));
+		    Assert.assertEquals(driver.getTitle(), fileUtility.getDataFromPropertiesFiles("premiumHomesTitle"));
+		    Reporter.log("User is able to navigte the Premium Homes Page",true);
+		}
+
+		@When("user should be able to mouse hover on HomeLoans Link")
+		public void user_should_be_able_to_mouse_hover_on_home_loans_link() {
+		    webDriverUtility.mouseHover(driver, premiumHomesPage.getHomeLoanLink());
+		    Reporter.log("user is able to mouse hover on HomeLoans Link",true);
+		}
+
+		@When("user should be able to click on the SBIHomeLoanEMICalculator Link and navigate to the SBIHomeLoanEMICalculator Page")
+		public void user_should_be_able_to_click_on_the_sbi_home_loan_emi_calculator_link_and_navigate_to_the_sbi_home_loan_emi_calculator_page() throws Exception {
+			javaScriptUtil.jsClick(premiumHomesPage.getSBIHomeLoanEmiCalculator());
+			webDriverUtility.switchToTabOnUrl(driver, fileUtility.getDataFromPropertiesFiles("sbiHomeLoanEmiCalculatorUrl"));
+			Assert.assertEquals(driver.getCurrentUrl(), fileUtility.getDataFromPropertiesFiles("sbiHomeLoanEmiCalculatorUrl"));
+			Reporter.log("user is click on the SBIHomeLoanEMICalculator Link and navigate to the SBIHomeLoanEMICalculator Page",true);
+		}
+
+		@When("user should be able to change the LoanTenure Years")
+		public void user_should_be_able_to_change_the_loan_tenure_years() {
+			//sbiHomeLoanEmiCalculatorPage.getLoanTenureLink().click();
+			sbiHomeLoanEmiCalculatorPage.clickElement(sbiHomeLoanEmiCalculatorPage.getLoanTenureLink());
+			//sbiHomeLoanEmiCalculatorPage.getTenYears().click();
+			sbiHomeLoanEmiCalculatorPage.clickElement(sbiHomeLoanEmiCalculatorPage.getTenYears());
+			Reporter.log("user is able to change the LoanTenure Years",true);
+		}
+
+		@Then("user should be click on RecalculateYourEMI button and calculate EMI amount")
+		public void user_should_be_click_on_recalculate_your_emi_button_and_calculate_emi_amount() throws InterruptedException {
+			//sbiHomeLoanEmiCalculatorPage.getRecalculatorYourEmiButton().click();
+			sbiHomeLoanEmiCalculatorPage.clickElement(sbiHomeLoanEmiCalculatorPage.getRecalculatorYourEmiButton());
+			Thread.sleep(3000);
+			Assert.assertTrue(sbiHomeLoanEmiCalculatorPage.getEmiAmount().isDisplayed());
+			Reporter.log("user is click on RecalculateYourEMI button and EMI amount is displayed",true);
+		    
+		}
+
+		///manage call and alerts
+		
+		@When("user should be click on Flat in Banglore and navigated to the FlatInBanglorePage")
+		public void user_should_be_click_on_flat_in_banglore_and_navigated_to_the_flat_in_banglore_page() throws Exception {
+			javaScriptUtil.jsClick(homePage.getFlatInBanglore());
+			webDriverUtility.switchToTabOnUrl(driver, fileUtility.getDataFromPropertiesFiles("flatInBanglore"));
+			Assert.assertTrue(driver.getCurrentUrl().contains(fileUtility.getDataFromPropertiesFiles("flatInBanglore")));
+			Reporter.log("Flat in Banglore Page is displayed", true);
+			Thread.sleep(3000);
+		}
+
+		@When("user should be click on MenuBarIcon")
+		public void user_should_be_click_on_menu_bar_icon() {
+			javaScriptUtil.jsClick(flatInBanglorePage.getMenuBarLink());
+			webDriverUtility.waitForElementPresent(driver, flatInBanglorePage.getHelpLink());
+			Reporter.log("User is click on MenuBar Icon", true);
+			Assert.assertTrue(flatInBanglorePage.getHelpLink().isDisplayed());
+			Reporter.log("Help Link is displayed", true);
+
+		}
+
+		@When("user should be able to click on help link")
+		public void user_should_be_able_to_click_on_help_link() {
+			flatInBanglorePage.clickElement(flatInBanglorePage.getHelpLink());
+			Reporter.log("user is able to click on help link", true);
+		}
+
+		@When("user should be clicks on the Help Center link and navigates to the Help Center page")
+		public void user_should_be_clicks_on_the_help_center_link_and_navigates_to_the_help_center_page() throws Exception {
+			javaScriptUtil.jsClick(flatInBanglorePage.getHelpCenterLink());
+			webDriverUtility.switchToTabOnUrl(driver, fileUtility.getDataFromPropertiesFiles("helpCenterUrl"));
+			Assert.assertEquals(driver.getCurrentUrl(), fileUtility.getDataFromPropertiesFiles("helpCenterUrl"));
+			Reporter.log("user clicks on help center and navigate to the help center page", true);
+			helpCenterPage.clickElement(helpCenterPage.getHelpCenterPopUp());
+
+		}
+
+		@When("user should be clicks on the Explore More link")
+		public void user_should_be_clicks_on_the_explore_more_link() throws InterruptedException {
+			webDriverUtility.waitForElementToBeClickable(driver, helpCenterPage.getExploreMoreLink());
+			javaScriptUtil.jsClick(helpCenterPage.getExploreMoreLink());
+			Reporter.log("user clicks on the Explore More Link", true);
+
+		}
+
+		@When("user should be clicks on the Manage CallsandAlerts link")
+		public void user_should_be_clicks_on_the_manage_callsand_alerts_link() throws Exception {
+			javaScriptUtil.jsClick(helpCenterPage.getManageCallsAndAlertsLink());
+			Thread.sleep(2000);
+			webDriverUtility.switchToTabOnUrl(driver, fileUtility.getDataFromPropertiesFiles("manageCallsAndAlertUrl"));
+			Assert.assertEquals(driver.getCurrentUrl(), fileUtility.getDataFromPropertiesFiles("manageCallsAndAlertUrl"));
+			Reporter.log("user click on manage calls/Alerts link and navigate to Manage Calls/Alters Page", true);
+		}
+
+		@Then("user should be able to click on the questions and view the answers")
+		public void user_should_be_able_to_click_on_the_questions_and_view_the_answers() throws InterruptedException {
+			javaScriptUtil.jsClick(helpCenterPage.getQuestion1Link());
+			Thread.sleep(2000);
+			webDriverUtility.waitForElementPresent(driver, helpCenterPage.getManageListLink());
+			Reporter.log("user is able to click on qustion and view tha answer", true);
+		}
+
+		@When("user should be able click on sales Enquiry and sales Enquiry Page should be displayed")
+		public void user_should_be_able_click_on_sales_enquiry_and_sales_enquiry_page_should_be_displayed()
+				throws Exception {
+			flatInBanglorePage.clickElement(flatInBanglorePage.getSalesEnquiry());
+			Thread.sleep(2000);
+			Reporter.log("user is able to click on Sales Enquiry", true);
+			webDriverUtility.switchToTabOnUrl(driver, fileUtility.getDataFromPropertiesFiles("salesEnquiryPage"));
+			Assert.assertEquals(driver.getCurrentUrl(), fileUtility.getDataFromPropertiesFiles("salesEnquiryPage"));
+			Reporter.log("Sales Enquiry Page is displayed", true);
+		}
+
+		@When("user should be able to click on Terms and Conditions")
+		public void user_should_be_able_to_click_on_terms_and_conditions() throws Exception {
+			WebElement termsAndConditions = salesEnquiryPage.getTermsAndConditionsLink();
+			webDriverUtility.scrollToElementTop(driver, termsAndConditions);
+			javaScriptUtil.jsClick(termsAndConditions);
+			Thread.sleep(2000);
+			Reporter.log("user is able to click on terms and conditions link", true);
+		}
+
+		@Then("user should be able to navigate to the terms and conditions page")
+		public void user_should_be_able_to_navigate_to_the_terms_and_conditions_page() throws Exception {
+			webDriverUtility.switchToTabOnTitle(driver, fileUtility.getDataFromPropertiesFiles("termsAndConditionsPage"));
+			Assert.assertEquals(driver.getTitle(), fileUtility.getDataFromPropertiesFiles("termsAndConditionsPage"));
+			Reporter.log("user is able to navigate the terms and conditions page", true);
+		}
+		
+	}
+}

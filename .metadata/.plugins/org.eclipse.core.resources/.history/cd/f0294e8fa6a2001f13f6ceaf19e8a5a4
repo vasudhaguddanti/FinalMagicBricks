@@ -1,0 +1,34 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PropertyDetailsPage {
+
+	public PropertyDetailsPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath = "(//a[@class='mb-ldp__dtls__body__list--link'])[2]")
+	private WebElement projectName;
+
+	public WebElement getProjectName() {
+		return projectName;
+	}
+	
+	// click operation
+		public void clickElement(WebElement element) {
+			element.click();
+		}
+	
+	public ProjectDetailsPage clickOnProjectNameLink(WebDriver driver)
+	{
+		PropertyDetailsPage propertyDetailsPage=new PropertyDetailsPage(driver);
+		clickElement(propertyDetailsPage.getProjectName());
+		return new ProjectDetailsPage(driver);
+		
+	}
+}

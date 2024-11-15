@@ -1,0 +1,12 @@
+package com.googleAuto;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class GoogleAuto {
+	String WebDriver;
+	public GoogleAuto()
+	{
+		WebDriverManager.chromiumdriver().setup();
+	}
+
+}

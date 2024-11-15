@@ -1,0 +1,5 @@
+Feature: Demo
+
+Scenario: Validate print 10
+
+Given user is able to print 

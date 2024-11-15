@@ -1,0 +1,12 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class AnswerPage {
+
+	public AnswerPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+}

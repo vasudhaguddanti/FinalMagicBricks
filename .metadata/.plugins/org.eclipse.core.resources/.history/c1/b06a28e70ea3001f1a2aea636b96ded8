@@ -1,0 +1,31 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import com.utilityClasses.JavaScriptUtil;
+
+public class PropertyDetailsPage extends BudgetHomesPage {
+	JavaScriptUtil javaScriptUtil=new JavaScriptUtil(driver);
+
+	public PropertyDetailsPage(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	@FindBy(xpath = "(//a[@class='mb-ldp__dtls__body__list--link'])[2]")
+	private WebElement projectName;
+
+	public WebElement getProjectName() {
+		return projectName;
+	}
+	
+	
+	public ProjectDetailsPage clickOnProjectNameLink(WebDriver driver)
+	{
+		PropertyDetailsPage propertyDetailsPage=new PropertyDetailsPage(driver);
+		javaScriptUtil.jsClick(propertyDetailsPage.getProjectName());
+		return new ProjectDetailsPage(driver);
+		
+	}
+}

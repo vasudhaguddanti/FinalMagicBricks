@@ -1,0 +1,22 @@
+package com.hook;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.utilPackage.DriverFactory;
+
+public class BasePage {
+
+	WebDriver driver = DriverFactory.getDriver();
+
+	// click operation
+	public void clickElement(WebElement element) {
+		element.click();
+	}
+
+	// sendKeys Operation
+	public void sendKeysToElement(WebElement element, String keys) {
+		element.sendKeys(keys);
+	}
+
+}
