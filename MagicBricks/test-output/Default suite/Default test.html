@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 15 11:02:54 IST 2024</td>
+<td>Started on:</td><td>Mon Nov 18 15:43:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>745 seconds (745836 ms)</td>
+<tr><td>Total time:</td><td>889 seconds (889588 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,215 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to add flat to the shortList", "MagicBrickBuyModule"<br/>
-<a href="#Output-1289213409" onClick='toggleBox("Output-1289213409", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1289213409" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1289213409">
-Browser is opened<br/>
-User is logged in<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [https://www.magicbricks.com/] but found [https://www.magicbricks.com/property-for-sale-rent/residential-real-estate]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.stepDefinitions.stepDefinitionForBuy.browser_should_be_open_and_url_should_be_navigated(stepDefinitionForBuy.java:53)
-	at ?.Browser should be open and url should be navigated(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/featureFile.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1289213409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1289213409'><pre>java.lang.AssertionError: expected [https://www.magicbricks.com/] but found [https://www.magicbricks.com/property-for-sale-rent/residential-real-estate]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.stepDefinitions.stepDefinitionForBuy.browser_should_be_open_and_url_should_be_navigated(stepDefinitionForBuy.java:53)
-	at ?.Browser should be open and url should be navigated(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/featureFile.feature:15)
-</pre></div></td>
-<td>96</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to logged in", "MagicBrickBuyModule"<br/>
-<a href="#Output-2116841430" onClick='toggleBox("Output-2116841430", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2116841430" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2116841430">
-Browser is opened<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=131.0.6778.69)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85e289b84f11caa989a3e91c15541560, clickElement {id=f.633A7AF26764C257B3A3693098095B2F.d.77C9C42FB3BB494FAE66EC9243A05A23.e.61}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64156/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (85e289b84f11caa989a3e91c15541560)] -&gt; xpath: (//a[text()=&apos;Login&apos;])[2]]
-Session ID: 85e289b84f11caa989a3e91c15541560
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at com.elementRepository.HomePage.clickElement(HomePage.java:21)
-	at com.elementRepository.HomePage.clickOLoginButton(HomePage.java:45)
-	at com.stepDefinitions.stepDefinitionForBuy.user_should_be_able_to_click_on_login_button_and_navigate_to_the_login_page(stepDefinitionForBuy.java:67)
-	at ?.user should be able to click on login button and navigate to the login page(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/featureFile.feature:42)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2116841430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2116841430'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=131.0.6778.69)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85e289b84f11caa989a3e91c15541560, clickElement {id=f.633A7AF26764C257B3A3693098095B2F.d.77C9C42FB3BB494FAE66EC9243A05A23.e.61}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64156/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (85e289b84f11caa989a3e91c15541560)] -&gt; xpath: (//a[text()=&apos;Login&apos;])[2]]
-Session ID: 85e289b84f11caa989a3e91c15541560
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at com.elementRepository.HomePage.clickElement(HomePage.java:21)
-	at com.elementRepository.HomePage.clickOLoginButton(HomePage.java:45)
-	at com.stepDefinitions.stepDefinitionForBuy.user_should_be_able_to_click_on_login_button_and_navigate_to_the_login_page(stepDefinitionForBuy.java:67)
-	at ?.user should be able to click on login button and navigate to the login page(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/featureFile.feature:42)
-</pre></div></td>
-<td>54</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to click on flatName and navigate to the details of the flat page", "BuyLink"<br/>
-<a href="#Output-1090160486" onClick='toggleBox("Output-1090160486", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1090160486" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1090160486">
-Browser is opened<br/>
-User is hover on the location and click on banglore<br/>
-user is mouse hover on the buy link<br/>
-Budget Homes is displayed<br/>
-user is able to click on BudgetHomes and naviagted to the BudgetHomes Page<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3df2427573e7850b8063ee7667248b36, isElementDisplayed {id=f.9A832447A3808A41FDA810B4D4A7977D.d.5F3F8869FF6B07CD14B0A87EE0756011.e.34}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3df2427573e7850b8063ee7667248b36)] -&gt; xpath: //div[@class=&apos;title-ellipsis&apos; and text()=&apos;BHK&apos;]]
-Session ID: 3df2427573e7850b8063ee7667248b36
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	at com.utilityClasses.WebDriverUtility.waitForElementPresent(WebDriverUtility.java:23)
-	at com.stepDefinitions.stepDefinitionForBuy.user_should_be_click_on_the_bhk_link(stepDefinitionForBuy.java:131)
-	at ?.user should be click on the BHK link(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/buyLink.feature:38)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1090160486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1090160486'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3df2427573e7850b8063ee7667248b36, isElementDisplayed {id=f.9A832447A3808A41FDA810B4D4A7977D.d.5F3F8869FF6B07CD14B0A87EE0756011.e.34}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64186/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3df2427573e7850b8063ee7667248b36)] -&gt; xpath: //div[@class=&apos;title-ellipsis&apos; and text()=&apos;BHK&apos;]]
-Session ID: 3df2427573e7850b8063ee7667248b36
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	at com.utilityClasses.WebDriverUtility.waitForElementPresent(WebDriverUtility.java:23)
-	at com.stepDefinitions.stepDefinitionForBuy.user_should_be_click_on_the_bhk_link(stepDefinitionForBuy.java:131)
-	at ?.user should be click on the BHK link(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/buyLink.feature:38)
-</pre></div></td>
-<td>73</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -286,10 +77,10 @@ Session ID: 3df2427573e7850b8063ee7667248b36
 </tr>
 <tr>
 <td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page", "BuyLink"<br/>
-<a href="#Output-811287498" onClick='toggleBox("Output-811287498", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1646118461" onClick='toggleBox("Output-1646118461", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-811287498" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-811287498">
+<a href="#Output-1646118461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1646118461">
 Browser is opened<br/>
 User is hover on the location and click on banglore<br/>
 user is mouse hover on the buy link<br/>
@@ -301,14 +92,96 @@ user is navigate to the ? 2.0 Cr Page<br/>
 </div>
 </td>
 <td></td>
-<td>77</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
+<td>107</td>
+<td>com.runners.CucumberRunner@79079097</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to add flat to the shortList", "MagicBrickBuyModule"<br/>
+<a href="#Output-355933666" onClick='toggleBox("Output-355933666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-355933666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-355933666">
+Browser is opened<br/>
+User is logged in<br/>
+Browser is opened<br/>
+User is hover on the location and click on banglore<br/>
+user is mouse hover on the buy link<br/>
+user is able to click on BudgetHomes and naviagted to the BudgetHomes Page<br/>
+user is click on like button<br/>
+user is able to click on shortlist button<br/>
+user is click on view your shortlist properties link<br/>
+user is able to see the flat in shortlist page<br/>
+</div>
+</td>
+<td></td>
+<td>226</td>
+<td>com.runners.CucumberRunner@79079097</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page", "BuyLink"<br/>
+<a href="#Output-1413886848" onClick='toggleBox("Output-1413886848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1413886848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1413886848">
+Browser is opened<br/>
+User is hover on the location and click on banglore<br/>
+user is mouse hover on the buy link<br/>
+Budget Homes is displayed<br/>
+user is able to click on BudgetHomes and naviagted to the BudgetHomes Page<br/>
+User is able to click on BudgetLink<br/>
+user is able to select the ? 80 Lac Option<br/>
+user is navigate to the ? 80 Lac Page<br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>com.runners.CucumberRunner@79079097</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page", "BuyLink"<br/>
+<a href="#Output-238998613" onClick='toggleBox("Output-238998613", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-238998613" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-238998613">
+Browser is opened<br/>
+User is hover on the location and click on banglore<br/>
+user is mouse hover on the buy link<br/>
+Budget Homes is displayed<br/>
+user is able to click on BudgetHomes and naviagted to the BudgetHomes Page<br/>
+User is able to click on BudgetLink<br/>
+user is able to select the ? 1 Cr Option<br/>
+user is navigate to the ? 1 Cr Page<br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>com.runners.CucumberRunner@79079097</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should be able to see the Manage Calls/Alerts answers", "BuyLink"<br/>
+<a href="#Output-281312377" onClick='toggleBox("Output-281312377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-281312377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-281312377">
+Browser is opened<br/>
+User is hover on the location and click on banglore<br/>
+user is mouse hover on the buy link<br/>
+Budget Homes is displayed<br/>
+Flat in Banglore Page is displayed<br/>
+User is click on MenuBar Icon<br/>
+Help Link is displayed<br/>
+user is able to click on help link<br/>
+user clicks on help center and navigate to the help center page<br/>
+user clicks on the Explore More Link<br/>
+user click on manage calls/Alerts link and navigate to Manage Calls/Alters Page<br/>
+user is able to click on first qustion<br/>
+</div>
+</td>
+<td></td>
+<td>116</td>
+<td>com.runners.CucumberRunner@79079097</td></tr>
 <tr>
 <td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user able to Calculate the Emi", "BuyLink"<br/>
-<a href="#Output-83534488" onClick='toggleBox("Output-83534488", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-630949334" onClick='toggleBox("Output-630949334", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-83534488" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-83534488">
+<a href="#Output-630949334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-630949334">
 Browser is opened<br/>
 User is hover on the location and click on banglore<br/>
 user is mouse hover on the buy link<br/>
@@ -321,82 +194,26 @@ user is click on RecalculateYourEMI button and EMI amount is displayed<br/>
 </div>
 </td>
 <td></td>
-<td>101</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
+<td>108</td>
+<td>com.runners.CucumberRunner@79079097</td></tr>
 <tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should be able to see the Manage Calls/Alerts answers", "BuyLink"<br/>
-<a href="#Output-871554897" onClick='toggleBox("Output-871554897", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to click on flatName and navigate to the details of the flat page", "BuyLink"<br/>
+<a href="#Output-1692915352" onClick='toggleBox("Output-1692915352", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-871554897" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-871554897">
-Browser is opened<br/>
-User is hover on the location and click on banglore<br/>
-user is mouse hover on the buy link<br/>
-Budget Homes is displayed<br/>
-Flat in Banglore Page is displayed<br/>
-User is click on MenuBar Icon<br/>
-Help Link is displayed<br/>
-user is able to click on help link<br/>
-user clicks on help center and navigate to the help center page<br/>
-user clicks on the Explore More Link<br/>
-user click on manage calls/Alerts link and navigate to Manage Calls/Alters Page<br/>
-user is able to click on qustion and view the answer<br/>
-</div>
-</td>
-<td></td>
-<td>86</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page", "BuyLink"<br/>
-<a href="#Output-319450809" onClick='toggleBox("Output-319450809", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-319450809" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-319450809">
+<a href="#Output-1692915352" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1692915352">
 Browser is opened<br/>
 User is hover on the location and click on banglore<br/>
 user is mouse hover on the buy link<br/>
 Budget Homes is displayed<br/>
 user is able to click on BudgetHomes and naviagted to the BudgetHomes Page<br/>
-User is able to click on BudgetLink<br/>
-user is able to select the ? 1 Cr Option<br/>
-user is navigate to the ? 1 Cr Page<br/>
+user is click on BHK link<br/>
+user is click on 1bhk link<br/>
 </div>
 </td>
 <td></td>
-<td>74</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page", "BuyLink"<br/>
-<a href="#Output-656844049" onClick='toggleBox("Output-656844049", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-656844049" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-656844049">
-Browser is opened<br/>
-User is hover on the location and click on banglore<br/>
-user is mouse hover on the buy link<br/>
-Budget Homes is displayed<br/>
-user is able to click on BudgetHomes and naviagted to the BudgetHomes Page<br/>
-User is able to click on BudgetLink<br/>
-user is able to select the ? 80 Lac Option<br/>
-user is navigate to the ? 80 Lac Page<br/>
-</div>
-</td>
-<td></td>
-<td>78</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user can sign in to the application", "MagicBrickBuyModule"<br/>
-<a href="#Output-857100926" onClick='toggleBox("Output-857100926", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-857100926" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-857100926">
-Browser is opened<br/>
-Usser is signed in<br/>
-</div>
-</td>
-<td></td>
-<td>101</td>
-<td>com.runners.CucumberRunner@4988d8b8</td></tr>
+<td>111</td>
+<td>com.runners.CucumberRunner@79079097</td></tr>
 </table><p>
 </body>
 </html>

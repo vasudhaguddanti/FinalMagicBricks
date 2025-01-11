@@ -4,25 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
-public class LoginPage extends HomePage{
+public class LoginPage extends BasePage {
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
-	
-	public HomePage clickOnContinueLink(WebDriver driver)
-	{
-		clickElement(continueButton);
-		return new HomePage(driver);
-	}
-	
-	public HomePage clickOnContinueButton(WebDriver driver)
-	{
-		clickElement(getContinueButton());
-		return new HomePage(driver);
-	}
-
-
 
 	@FindBy(id = "emailOrMobile")
 	private WebElement emailOrPhoneTextFeild;
@@ -44,4 +29,16 @@ public class LoginPage extends HomePage{
 	public WebElement getContinueButton() {
 		return continueButton;
 	}
+
+	// page chaining
+	public HomePage clickOnContinueLink(WebDriver driver) {
+		clickElement(continueButton);
+		return new HomePage(driver);
+	}
+
+	public HomePage clickOnContinueButton(WebDriver driver) {
+		clickElement(getContinueButton());
+		return new HomePage(driver);
+	}
+
 }

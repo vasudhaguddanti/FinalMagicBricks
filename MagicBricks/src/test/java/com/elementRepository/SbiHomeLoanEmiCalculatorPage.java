@@ -13,19 +13,19 @@ public class SbiHomeLoanEmiCalculatorPage extends PremiumHomesPage {
 	@FindBy(xpath = "//div[@class='hl__calc__form__input-row select']")
 	private WebElement loanTenureLink;
 
-	@FindBy(xpath = "(//li[@class='select__list--option'])[2]")
-	private WebElement tenYears;
-
-	@FindBy(id = "submitbuttonEmiCalid")
-	private WebElement RecalculatorYourEmiButton;
-
 	public WebElement getLoanTenureLink() {
 		return loanTenureLink;
 	}
 
+	@FindBy(xpath = "(//li[@class='select__list--option'])[2]")
+	private WebElement tenYears;
+
 	public WebElement getTenYears() {
 		return tenYears;
 	}
+
+	@FindBy(id = "submitbuttonEmiCalid")
+	private WebElement RecalculatorYourEmiButton;
 
 	public WebElement getRecalculatorYourEmiButton() {
 		return RecalculatorYourEmiButton;
@@ -36,16 +36,6 @@ public class SbiHomeLoanEmiCalculatorPage extends PremiumHomesPage {
 
 	public WebElement getEmiAmount() {
 		return emiAmount;
-	}
-
-	// click operation
-	public void clickElement(WebElement element) {
-		element.click();
-	}
-
-	// sendKeys Operation
-	public void sendKeysToElement(WebElement element, String keys) {
-		element.sendKeys(keys);
 	}
 
 }

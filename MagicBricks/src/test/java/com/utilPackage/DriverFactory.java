@@ -21,7 +21,7 @@ public class DriverFactory {
 		String url=fileUtility.getDataFromPropertiesFiles("url");
 		if (browserName.equals("chrome")) {
 			ChromeOptions opt=new ChromeOptions();
-			opt.setBinary("C:\\Users\\Gowthami\\OneDrive\\Documents\\Selenium\\chrome-win64\\chrome-win64\\chrome.exe");
+			opt.setBinary("C:\\Users\\Gowthami\\OneDrive\\Documents\\Selenium\\chrome-win64\\chrome-win64\\chrome.exe");	
 			
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("profile.default_content_setting_values.popups", 1);      // Allow pop-ups

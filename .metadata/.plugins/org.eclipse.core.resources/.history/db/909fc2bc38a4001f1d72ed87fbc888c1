@@ -1,0 +1,54 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.utilityClasses.JavaScriptUtil;
+
+
+public class FlatInBanglorePage extends HomePage {
+
+	public FlatInBanglorePage(WebDriver driver) {
+		super(driver);
+	}
+	
+	public HelpCenterPage clickOnHelpCenterLink(WebDriver driver)
+	{
+		javascriptClick(driver, getHelpCenterLink());
+		return new HelpCenterPage(driver);
+	}
+
+	@FindBy(xpath = "//div[@class='mb-header__main__hamburger']")
+	private WebElement menuBarLink;
+
+	public WebElement getMenuBarLink() {
+		return menuBarLink;
+	}
+	
+	public void clickOnMenuBarLink(WebElement menuBarLink)
+	{
+		javascriptClick(driver, menuBarLink);
+	}
+
+	@FindBy(xpath = "//span[text()='Help']")
+	private WebElement helpLink;
+
+	public WebElement getHelpLink() {
+		return helpLink;
+	}
+
+	@FindBy(xpath = "(//span[text()='Sales Enquiry'])[2]")
+	private WebElement salesEnquiry;
+
+	public WebElement getSalesEnquiry() {
+		return salesEnquiry;
+	}
+
+	@FindBy(xpath = "//span[text()='Help Center']")
+	private WebElement helpCenterLink;
+
+	public WebElement getHelpCenterLink() {
+		return helpCenterLink;
+	}
+}

@@ -3,71 +3,11 @@ package com.elementRepository;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import com.utilityClasses.JavaScriptUtil;
 
-public class HomePage {
-	WebDriver driver;
-	JavaScriptUtil javaScriptUtil = new JavaScriptUtil(driver);
+public class HomePage extends BasePage {
 
 	public HomePage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
-	}
-
-	public BudgetHomesPage clickOnBudgetHomes(WebDriver driver) {
-		javaScriptUtil.jsClick(getBudgetHomesLink());
-		return new BudgetHomesPage(driver);
-	}
-
-	public PremiumHomesPage clickOnPremiumHomesLink(WebDriver driver) {
-		clickElement(getPremiumHomesLink());
-		return new PremiumHomesPage(driver);
-	}
-
-	public FlatInBanglorePage clickOnFlatInBangloreLink(WebDriver driver) {
-		javaScriptUtil.jsClick(getFlatInBanglore());
-		return new FlatInBanglorePage(driver);
-	}
-
-	public LoginPage clickOLoginButton(WebDriver driver) {
-		clickElement(getLoginButton());
-		return new LoginPage(driver);
-	}
-
-	public SignUpPage clickOnSignUpLink(WebDriver driver) {
-		javaScriptUtil.jsClick(getSignUpLink());
-		return new SignUpPage(driver);
-	}
-
-	// click operation
-	public void clickElement(WebElement element) {
-		element.click();
-	}
-
-	// sendKeys Operation
-	public void sendKeysToElement(WebElement element, String keys) {
-		element.sendKeys(keys);
-	}
-
-	@FindBy(xpath = "(//a[text()='Login'])[1]")
-	private WebElement loginLink;
-
-	public WebElement getLoginLink() {
-		return loginLink;
-	}
-
-	@FindBy(xpath = "(//a[text()='Login'])[2]")
-	private WebElement loginButton;
-
-	public WebElement getLoginButton() {
-		return loginButton;
-	}
-
-	@FindBy(xpath = "(//a[@class='mb-header__main__link js-menu-link'])[1]")
-	private WebElement locationLink;
-
-	public WebElement getLocationLink() {
-		return locationLink;
+		super(driver);
 	}
 
 	@FindBy(id = "buyheading")
@@ -77,13 +17,6 @@ public class HomePage {
 		return buyLink;
 	}
 
-	@FindBy(xpath = "//ul[@class='city-drop-link-group']//a[text()='Bangalore']")
-	private WebElement bangloreLink;
-
-	public WebElement getBangloreLink() {
-		return bangloreLink;
-	}
-
 	@FindBy(partialLinkText = "Ready to Move")
 	private WebElement readyToMoveLink;
 
@@ -91,45 +24,41 @@ public class HomePage {
 		return readyToMoveLink;
 	}
 
-	@FindBy(xpath = "//a[text()='Flats in Bangalore']")
+	@FindBy(linkText = "Flats in Bangalore")
 	private WebElement flatInBanglore;
 
 	public WebElement getFlatInBanglore() {
 		return flatInBanglore;
 	}
 
-	@FindBy(xpath = "//a[contains(text(),'Budget Homes')]")
+	@FindBy(partialLinkText = "Budget Homes")
 	private WebElement budgetHomesLink;
 
 	public WebElement getBudgetHomesLink() {
 		return budgetHomesLink;
 	}
 
-	@FindBy(xpath = "//a[text()='Premium Homes']")
+	@FindBy(linkText = "Premium Homes")
 	private WebElement premiumHomesLink;
 
 	public WebElement getPremiumHomesLink() {
 		return premiumHomesLink;
 	}
 
-	@FindBy(xpath = "//div[@class='onmodal__cross']")
-	private WebElement popUpWrong;
-
-	public WebElement getPopUpWrong() {
-		return popUpWrong;
+	// page chaining
+	public BudgetHomesPage clickOnBudgetHomes(WebDriver driver) {
+		javascriptClick(driver, getBudgetHomesLink());
+		return new BudgetHomesPage(driver);
 	}
 
-	@FindBy(xpath = "//div[@class='mb-header__main__login js-menu-container loggedin']")
-	private WebElement visibleProfile;
-
-	public WebElement getVisibleProfile() {
-		return visibleProfile;
+	public PremiumHomesPage clickOnPremiumHomesLink(WebDriver driver) {
+		clickElement(getPremiumHomesLink());
+		return new PremiumHomesPage(driver);
 	}
 
-	@FindBy(xpath = "//a[text()='Sign Up']")
-	private WebElement signUpLink;
-
-	public WebElement getSignUpLink() {
-		return signUpLink;
+	public FlatInBanglorePage clickOnFlatInBangloreLink(WebDriver driver) {
+		javascriptClick(driver, getFlatInBanglore());
+		return new FlatInBanglorePage(driver);
 	}
+
 }

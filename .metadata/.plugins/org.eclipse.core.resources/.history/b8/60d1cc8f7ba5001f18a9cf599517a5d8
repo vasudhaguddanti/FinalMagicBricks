@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="218.231" tests="7" skipped="0" failures="3" errors="0">
+<testcase classname="BuyLink" name="Validate that the user should be able to see the Manage Calls/Alerts answers" time="172.289">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be click on Flat in Banglore and navigated to the FlatInBanglorePage.passed
+And user should be click on MenuBarIcon.....................................passed
+And user should be able to click on help link...............................passed
+And user should be clicks on the Help Center link and navigates to the Help Center page.passed
+And user should be clicks on the Explore More link..........................passed
+And user should be clicks on the Manage CallsandAlerts link.................passed
+Then user should be able to click on the first question.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user able to Calculate the Emi" time="188.265">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab41350b708b2795a8912603dc5e3ec6, clickElement {id=f.B671E8FE92801AEB7FA72A30B46625FD.d.8A483918E45BE3F0A8886C97100C45E7.e.79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50228/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ab41350b708b2795a8912603dc5e3ec6)] -&gt; xpath: (//li[@class='select__list--option'])[2]]
+Session ID: ab41350b708b2795a8912603dc5e3ec6">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab41350b708b2795a8912603dc5e3ec6, clickElement {id=f.B671E8FE92801AEB7FA72A30B46625FD.d.8A483918E45BE3F0A8886C97100C45E7.e.79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50228/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ab41350b708b2795a8912603dc5e3ec6)] -> xpath: (//li[@class='select__list--option'])[2]]
+Session ID: ab41350b708b2795a8912603dc5e3ec6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.elementRepository.BasePage.clickElement(BasePage.java:39)
+	at com.stepDefinitions.stepDefinitionForBuy.user_should_be_able_to_change_the_loan_tenure_years(stepDefinitionForBuy.java:170)
+	at ✽.user should be able to change the LoanTenure Years(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/buyLink.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on Premium Homes Link and navigate to the premium homes Page.passed
+And user should be able to mouse hover on HomeLoans Link....................passed
+And user should be able to click on the SBIHomeLoanEMICalculator Link and navigate to the SBIHomeLoanEMICalculator Page.passed
+And user should be able to change the LoanTenure Years......................failed
+Then user should be click on RecalculateYourEMI button and calculate EMI amount.skipped
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page - #1.2" time="57.665">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be able to click on BudgetLink..............................passed
+And user should be able to select on the 2 in MaxOptions Dropdown...........passed
+Then user should be navigate to that relavent Page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page - #1.1" time="217.681">
+<failure type="org.openqa.selenium.TimeoutException" message="java.util.concurrent.TimeoutException
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29b00fd9a5153dc846f877e2b99fa2c6, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50237/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29b00fd9a5153dc846f877e2b99fa2c6">
+<![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29b00fd9a5153dc846f877e2b99fa2c6, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50237/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29b00fd9a5153dc846f877e2b99fa2c6
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:402)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
+	at com.utilPackage.DriverFactory.setUpBrowser(DriverFactory.java:40)
+	at com.hook.BaseClass.beforeScenario(BaseClass.java:15)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:385)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
+	at com.utilPackage.DriverFactory.setUpBrowser(DriverFactory.java:40)
+	at com.hook.BaseClass.beforeScenario(BaseClass.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+</failure>
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................skipped
+And user should be hover on location and click on BangloreLink..............skipped
+And user should be able to mouse hover on the Buy Link......................skipped
+And The Ready to Move link should be displayed..............................skipped
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.skipped
+And user should be able to click on BudgetLink..............................skipped
+And user should be able to select on the 1 in MaxOptions Dropdown...........skipped
+Then user should be navigate to that relavent Page..........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page - #1.3" time="168.884">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be able to click on BudgetLink..............................passed
+And user should be able to select on the 3 in MaxOptions Dropdown...........passed
+Then user should be navigate to that relavent Page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that user is able to click on flatName and navigate to the details of the flat page" time="69.416">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be click on the BHK link....................................passed
+And user should be click on the 1BHK link...................................passed
+And user should be able to remove the HouseOrVilla type in PropertyType.....passed
+Then user should be able to click on  property Name link and navigate to the property details page.passed
+]]></system-out>
+</testcase>
+<testcase classname="MagicBrickBuyModule" name="Validate that the user is able to add flat to the shortList" time="70.394">
+<failure type="org.openqa.selenium.WebDriverException" message="target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a52b58fd3bac32e14d34123eb90419, findElement {using=xpath, value=//div[@class='onmodal__cross']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56672/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33a52b58fd3bac32e14d34123eb90419">
+<![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a52b58fd3bac32e14d34123eb90419, findElement {using=xpath, value=//div[@class='onmodal__cross']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Gowthami\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56672/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33a52b58fd3bac32e14d34123eb90419
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.elementRepository.BasePage.clickElement(BasePage.java:39)
+	at com.stepDefinitions.stepDefinitionForBuy.user_should_be_able_to_click_on_continue(stepDefinitionForBuy.java:271)
+	at ✽.user should be able to click on continue(file:///D:/sprintProject/MagicBricks/./src/test/resources/featureData/featureFile.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Browser should be open and url should be navigated....................passed
+When user should be able to hover on login link.............................passed
+And user should be able to click on login button and navigate to the login page.passed
+And user should be able to enter valid credentails and click on next button.passed
+And user should be able to click on continue................................failed
+Then user should be logged in...............................................skipped
+When Browser should be open and url should be navigated.....................skipped
+And user should be hover on location and click on BangloreLink..............skipped
+And user should be able to mouse hover on the Buy Link......................skipped
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.skipped
+And user should be able to click on the like button.........................skipped
+And user should be able to mouse hover on Shortlist button and click on View your Shortlisted Properties link.skipped
+Then user should be able see the property in Shortlist page.................skipped
+]]></system-out>
+</testcase>
+</testsuite>

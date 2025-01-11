@@ -1,0 +1,103 @@
+package com.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class SignUpPage extends BasePage {
+	
+	public SignUpPage(WebDriver driver) {
+		super(driver);
+	}
+
+	@FindBy(xpath = "//div[@class='mb-header__main__login js-menu-container']/a[text()='Login']")
+	private WebElement loginLink;
+
+	public WebElement getLoginLink() {
+		return loginLink;
+	}
+
+
+	@FindBy(css = "div.signup__text a.signup__link")
+	private WebElement mainSignUpLink;
+	
+	public WebElement getMainSignUpLink() {
+		return mainSignUpLink;
+	}
+
+	@FindBy(partialLinkText = "Buyer/Owner/Tenant")
+	private WebElement radioLink;
+	
+	public WebElement getRadioLink() {
+		return radioLink;
+	}
+
+
+	@FindBy(id = "regName")
+	private WebElement nameTextField;
+	
+	public WebElement getNameTextField() {
+		return nameTextField;
+	}
+
+	@FindBy(id = "regEmailid")
+	private WebElement emailTextField;
+	
+	public WebElement getEmailTextField() {
+		return emailTextField;
+	}
+
+	@FindBy(id = "regPassword")
+	private WebElement passwordTextField;
+	
+	public WebElement getPasswordTextField() {
+		return passwordTextField;
+	}
+
+	@FindBy(id = "regMobile")
+	private WebElement mobileTextField;
+	
+	public WebElement getMobileTextField() {
+		return mobileTextField;
+	}
+
+
+	@FindBy(id = "chk-TNC")
+	private WebElement checkboxField;
+	
+	public WebElement getCheckboxField() {
+		return checkboxField;
+	}
+
+	@FindBy(id = "captchaCodeRegistration")
+	private WebElement captchaField;
+	
+	public WebElement getCaptchaField() {
+		return captchaField;
+	}
+
+	@FindBy(xpath = "//button[contains(text(),'Sign Up')]")
+	private WebElement signUpButton;
+	
+	public WebElement getSignUpButton() {
+		return signUpButton;
+	}
+
+	@FindBy(xpath = "//button[@onclick='verifyOtp()']")
+	private WebElement continueButton;
+
+
+	public WebElement getContinueButton() {
+		return continueButton;
+	}
+	
+	//page chaining
+	
+	public HomePage clickOnContinueButton(WebDriver driver)
+	{
+		clickElement(getContinueButton());
+		return new HomePage(driver);
+	}
+
+}

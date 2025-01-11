@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
 public class ShortListPage extends BudgetHomesPage {
 
 	public ShortListPage(WebDriver driver) {
@@ -14,12 +13,12 @@ public class ShortListPage extends BudgetHomesPage {
 	@FindBy(xpath = "//span[@class='mb-srp__list-shortlist__close']")
 	private WebElement wrongOption;
 
-	@FindBy(xpath = "//span[@class='mb-srp__list-shortlist__close']")
-	private WebElement yesButton;
-
 	public WebElement getWrongOption() {
 		return wrongOption;
 	}
+
+	@FindBy(xpath = "//span[@class='mb-srp__list-shortlist__close']")
+	private WebElement yesButton;
 
 	public WebElement getYesButton() {
 		return yesButton;
@@ -37,16 +36,6 @@ public class ShortListPage extends BudgetHomesPage {
 
 	public WebElement getFlatNameInShortList() {
 		return flatNameInShortList;
-	}
-
-	// click operation
-	public void clickElement(WebElement element) {
-		element.click();
-	}
-
-	// sendKeys Operation
-	public void sendKeysToElement(WebElement element, String keys) {
-		element.sendKeys(keys);
 	}
 
 }

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="888.23" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="BuyLink" name="Validate that the user should be able to see the Manage Calls/Alerts answers" time="116.513">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be click on Flat in Banglore and navigated to the FlatInBanglorePage.passed
+And user should be click on MenuBarIcon.....................................passed
+And user should be able to click on help link...............................passed
+And user should be clicks on the Help Center link and navigates to the Help Center page.passed
+And user should be clicks on the Explore More link..........................passed
+And user should be clicks on the Manage CallsandAlerts link.................passed
+Then user should be able to click on the first question.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user able to Calculate the Emi" time="108.783">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on Premium Homes Link and navigate to the premium homes Page.passed
+And user should be able to mouse hover on HomeLoans Link....................passed
+And user should be able to click on the SBIHomeLoanEMICalculator Link and navigate to the SBIHomeLoanEMICalculator Page.passed
+And user should be able to change the LoanTenure Years......................passed
+Then user should be click on RecalculateYourEMI button and calculate EMI amount.passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that user is able to click on flatName and navigate to the details of the flat page" time="111.673">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be click on the BHK link....................................passed
+And user should be click on the 1BHK link...................................passed
+And user should be able to remove the HouseOrVilla type in PropertyType.....passed
+Then user should be able to click on  property Name link and navigate to the property details page.passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page - #1.1" time="108.417">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be able to click on BudgetLink..............................passed
+And user should be able to select on the 1 in MaxOptions Dropdown...........passed
+Then user should be navigate to that relavent Page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page - #1.2" time="108.856">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be able to click on BudgetLink..............................passed
+And user should be able to select on the 2 in MaxOptions Dropdown...........passed
+Then user should be navigate to that relavent Page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="BuyLink" name="Validate that the user is able to change the maxOption in Budget and navigate to that relavent Page - #1.3" time="107.069">
+<system-out><![CDATA[
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And The Ready to Move link should be displayed..............................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be able to click on BudgetLink..............................passed
+And user should be able to select on the 3 in MaxOptions Dropdown...........passed
+Then user should be navigate to that relavent Page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="MagicBrickBuyModule" name="Validate that the user is able to add flat to the shortList" time="226.64">
+<system-out><![CDATA[
+Given Browser should be open and url should be navigated....................passed
+When user should be able to hover on login link.............................passed
+And user should be able to click on login button and navigate to the login page.passed
+And user should be able to enter valid credentails and click on next button.passed
+And user should be able to click on continue................................passed
+Then user should be logged in...............................................passed
+When Browser should be open and url should be navigated.....................passed
+And user should be hover on location and click on BangloreLink..............passed
+And user should be able to mouse hover on the Buy Link......................passed
+And user should be able to click on BudgetHomes and navigated to the BudgetHomesPage.passed
+And user should be able to click on the like button.........................passed
+And user should be able to mouse hover on Shortlist button and click on View your Shortlisted Properties link.passed
+Then user should be able see the property in Shortlist page.................passed
+]]></system-out>
+</testcase>
+</testsuite>

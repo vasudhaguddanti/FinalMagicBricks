@@ -11,11 +11,6 @@ public class FlatInBanglorePage extends HomePage {
 		super(driver);
 	}
 	
-	public HelpCenterPage clickOnHelpCenterLink(WebDriver driver)
-	{
-		javaScriptUtil.jsClick(getHelpCenterLink());
-		return new HelpCenterPage(driver);
-	}
 
 	@FindBy(xpath = "//div[@class='mb-header__main__hamburger']")
 	private WebElement menuBarLink;
@@ -23,7 +18,7 @@ public class FlatInBanglorePage extends HomePage {
 	public WebElement getMenuBarLink() {
 		return menuBarLink;
 	}
-
+	
 	@FindBy(xpath = "//span[text()='Help']")
 	private WebElement helpLink;
 
@@ -44,15 +39,12 @@ public class FlatInBanglorePage extends HomePage {
 	public WebElement getHelpCenterLink() {
 		return helpCenterLink;
 	}
-
-	// click operation
-	public void clickElement(WebElement element) {
-		element.click();
-	}
-
-	// sendKeys Operation
-	public void sendKeysToElement(WebElement element, String keys) {
-		element.sendKeys(keys);
+	
+	//page chaining
+	public HelpCenterPage clickOnHelpCenterLink(WebDriver driver)
+	{
+		javascriptClick(driver, getHelpCenterLink());
+		return new HelpCenterPage(driver);
 	}
 
 }
